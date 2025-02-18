@@ -1,0 +1,34 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assignment_image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(81%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    font-size: 5vw; /* 화면 크기에 비례한 폰트 크기 */
+    color: coral;
+    margin-bottom: 1vh; /* 적절한 간격 유지 */
+}
+
+.content {
+    font-size: 2vw;
+    color: #6ea77d;
+    font-weight: 700;
+    max-width: 80%;
+}
+
+.main-bu{
+
+}
+
+
