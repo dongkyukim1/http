@@ -1,0 +1,79 @@
+/* 공통 스타일 */
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.form-background {
+    background-color: #170306;
+    padding: 30px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.form-white {
+    background-color: #fff;
+    padding: 30px;
+    width: 50%;
+    height: auto; /* 내용에 맞게 높이 조절 */
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 입력 필드 공통 스타일 */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 이름 입력 필드 영역 */
+.name-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* 이름 입력 필드 */
+.name-field {
+    width: 50%;
+}
+
+.name-field p {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.name-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.message-field{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+.Yellow-button{
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    color: yellow;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
