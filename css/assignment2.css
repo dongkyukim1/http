@@ -1,0 +1,102 @@
+.body {
+    position: relative;
+}
+.input-email, .input-firstname, .input-lastname {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.form {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 15px 25px;  /* 상단 마진 줄임 */
+}
+
+.email {
+    margin: 15px 25px;  /* 상하 마진 줄임 */
+}
+
+.email h4 {
+    margin-bottom: 8px;
+}
+
+.input-email {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 15px 25px;  /* 상하 마진 줄임 */
+}
+
+.name h4 {
+    margin-top: 0;  /* 상단 마진 제거 */
+    margin-bottom: 8px;  /* 하단 마진 추가 */
+}
+
+.firstname,
+.lastname {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstname input,
+.lastname input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.message {
+    margin: 3px 25px;
+    height: 100px;
+}
+.message h4{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.message textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    resize: none;
+}
+.submit {
+    margin: 50px 25px;
+    display: flex;
+    gap: 60px;
+}
+
+.btn-submit {
+    width: 40%;
+    height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
