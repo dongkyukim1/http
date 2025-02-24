@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <style>
+    /* 전체 배경 */
+    .cart-background {
+      width: 100%;
+      background-color: #c2d3de;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 테이블 스타일 */
+    .cart-table {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      border-collapse: collapse;
+      table-layout: fixed; /* 균형 잡힌 셀 크기 유지 */
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #c2d3de;
+    }
+
+    /* 헤더 스타일 */
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    /* Item 열만 왼쪽 정렬 */
+    .item-name {
+      text-align: left;
+      padding-left: 10px;
+    }
+    thead th {
+      border: none !important;
+    }
+    /* 첫 번째 행 및 마지막 행의 스타일 */
+    tbody tr:first-child td,
+    tbody tr:nth-child(2) td,
+    tbody tr:nth-child(3) td,
+    tbody tr:last-child td {
+      border-left: none;
+      border-right: none;
+    }
+
+    /* 총합 행 스타일 */
+    .total-row td {
+      font-weight: bold;
+      border-top: 2px solid black;
+      text-align: right;
+    }
+
+    /* 이미지 크기 조정 */
+    .item-img {
+      width: 50px;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+<div class="cart-background">
+  <table class="cart-table">
+    <thead>
+    <tr>
+      <th></th>
+      <th class="item-name">Item</th>
+      <th>Amount</th>
+      <th>Price</th>
+      <th colspan="2">Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><img src="assignment_image/assignment3.png" class="item-img"></td>
+      <td class="item-name">Apple</td>
+      <td>1</td>
+      <td>$3</td>
+      <td colspan="2">$6</td>
+    </tr>
+    <tr>
+      <td><img src="assignment_image/banana.png" class="item-img"></td>
+      <td class="item-name">Banana</td>
+      <td>5</td>
+      <td>$1</td>
+      <td colspan="2">$5</td>
+    </tr>
+    <tr>
+      <td><img src="assignment_image/orange.png" class="item-img"></td>
+      <td class="item-name">Orange</td>
+      <td>5</td>
+      <td>$2</td>
+      <td colspan="2">$10</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="4">Total</td>
+      <td colspan="2">$21</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
