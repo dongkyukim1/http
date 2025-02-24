@@ -11,30 +11,58 @@
     </style>
 </head>
 <body>
-<div class="background">
-    <div class="container">
-        <div class="a" style="border:0;"></div>
-
-        <div class="title-wrapper">
-            <h2 class="title">Your shopping cart</h2>
+    <div class="background">
+        <div class="container">
+            <div class="a" style="border:0;"></div>
+    
+            <div class="title-wrapper">
+                <h2 class="title">Your shopping cart</h2>
+            </div>
+    
+            <table border="1">
+                <!-- 헤더 -->
+                <tr>
+                    <td></td>
+                    <td>ITEM</td>
+                    <td>AMOUNT</td>
+                    <td>PRICE</td>
+                    <td>TOTAL</td>
+                </tr>
+                <!-- 1번째 상품행 -->
+                <tr>
+                    <td><img src="assignment_image/assignment3.png" class="shoes"></td>
+                    <td>
+                        <strong>Converse</strong>
+                        <p>편안한 착용감과 트렌디한 디자인</p>
+                    </td>
+                    <td style="text-align: center;">1</td>
+                    <td>$1979.00</td>
+                    <td>$1979.00</td>
+                </tr>
+                <!-- 추가 상품행 예시 -->
+                <tr>
+                    <td><img src="assignment_image/assignment3.png" class="shoes"></td>
+                    <td>
+                        <strong>Converse</strong>
+                        <p>편안한 착용감과 트렌디한 디자인</p>
+                    </td>
+                    <td  style="text-align: center" >1</td>
+                    <td>$989.00</td>
+                    <td>$989.00</td>
+                </tr>
+                <!-- 총 가격 -->
+                <tr style="border-bottom: 0 !important;">
+                    <td colspan="4"></td>
+                    <td style="text-align: right; font-weight: bold;">$2968.00</td>
+                </tr>
+            </table>
         </div>
-
-        <table>
-            <tr>
-                <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
-            </tr>
-            <tr>
-                <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
-            </tr>
-            <tr>
-                <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
-            </tr>
-            <tr style="border-bottom :0; !important;" >
-                <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
-            </tr>
-
-        </table>
+        
+        <!-- 하단 버튼 영역 -->
+        <div class="footer">
+            <a href="https://www.naver.com" class="page">Edit your shopping cart</a>
+            <button class="button">Choose payment method</button>
+        </div>
     </div>
-</div>
-</body>
+    </body>
 </html>
