@@ -1,0 +1,30 @@
+@font-face {
+  font-family: '이쁜폰트';
+  src: url(../font/NanumSquare-master/NanumSquareAcB.woff);
+}
+
+@font-face {
+  font-family: '굵은폰트';
+  font-weight: 800;
+  src: url(../font/NanumSquare-master/NanumSquareB.woff);
+}
+
+.title {
+  font-family: '굵은폰트';
+}
+.content {
+  font-family: '이쁜폰트';
+}
+.footer {
+  font-family: 'Dongle', serif;
+  font-weight: 900;
+  font-style: normal;
+}
+p,
+h4,
+h3,
+h3,
+h1,
+span {
+  transform: rotate(0.03deg);
+}
