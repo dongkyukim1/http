@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/class2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- display : flex 는 부모에다가 하면 안에 div 가로정렬 -->
+    <!-- justify-content: center 가운데정렬 flex-end,start-->
+    <!-- flex-direction : row , column 디스플레이 차이별 배치-->
+    <!-- flex-wrap : wrap; 요소가 크면 밑으로 내려감감-->
+    <!-- align-items : center; 가운데데정렬-->
+    <!-- flex-grow: 2 2배수로 차지하게해주세요-->
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="image/apple_logo.png" class="logo" />
+      </div>
+      <div class="flex-item" style="flex-grow: 1"></div>
+      <div class="flex-item">
+        <h1 class="Products">Products</h1>
+      </div>
+      <div class="flex-item"><h1 class="Service">Service</h1></div>
+    </div>
+  </body>
+</html>
