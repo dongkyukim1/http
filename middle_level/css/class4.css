@@ -1,39 +1,90 @@
 .wrapper {
-    display: flex;
-    flex-direction: column; /* 세로 정렬 */
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* 화면 전체 높이 사용 */
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 사용 */
 }
 .wrapper div {
-    margin: 10px 0; /* 위아래 간격 추가 */
+  margin: 10px 0; /* 위아래 간격 추가 */
 }
 .wrapper div i {
-background-color: burlywood;
-width: 100px;
-height: 100px;
-border-radius: 50px;
-display: flex;  /* flexbox 활성화 */
-justify-content: center;  /* 수평 정렬 */
-align-items: center;  /* 수직 정렬 */
-color: white;
-font-size: 70px;  /* 아이콘 크기 조절 */
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex; /* flexbox 활성화 */
+  justify-content: center; /* 수평 정렬 */
+  align-items: center; /* 수직 정렬 */
+  color: rgb(255, 255, 255);
+  font-size: 70px; /* 아이콘 크기 조절 */
 }
 
-.title{
-    font-size: x-large;
-    font-weight: 800;
+.title {
+  font-size: x-large;
+  font-weight: 800;
 }
-.content{
-    font-size: larger;
-    font-weight: 500;
+.content {
+  font-size: larger;
+  font-weight: 500;
 }
-.orange{
-    color:rgba(255, 166, 0, 0.918);
+.orange {
+  color: rgba(255, 166, 0, 0.918);
 }
-.green{
-    color:green;
+.green {
+  color: green;
 }
-.blue{
-    color:blue;
+.blue {
+  color: blue;
+}
+.shop-bg {
+  background-color: rgba(255, 166, 0, 0.918);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  text-align: center;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  color: white;
+  font-size: 1.2em;
+}
+
+.shop-item:hover .overlay {
+  opacity: 1;
+  height: 100%;
 }
