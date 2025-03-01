@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Blog Card</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card shadow-lg" style="max-width: 600px; margin: auto; border-radius: 15px;">
+      <!-- 이미지 -->
+      <img src="image/apple_logo.png" class="card-img-top" alt="Blog Image" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+      
+      <!-- 카드 본문 -->
+      <div class="card-body">
+        <!-- 태그 -->
+        <span class="badge bg-primary mb-2">News</span>
+        
+        <!-- 제목 -->
+        <h5 class="card-title">Blog post title</h5>
+        
+        <!-- 설명 -->
+        <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+        <!-- 프로필 정보 -->
+        <div class="d-flex align-items-center mt-4">
+          <!-- 프로필 이미지 -->
+          <img src="image/iphone.png" alt="Profile Image" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+          
+          <!-- 이름 및 날짜 -->
+          <div>
+            <h6 class="mb-0">Kelly Rowan</h6>
+            <small class="text-muted">March 12, 2021 · 6 min read</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
