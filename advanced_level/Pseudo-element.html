@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-element</title>
+    <link href="css/class1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Q1. Pseudo-Class 는 뭐임 ?
+     ex ) :hover, :active, :focus   
+     -> 어떤 상태가 다른상태일 때 스타일 줄 수 있게 도와주는것  -->
+
+    <!-- Q2. 둘의 차이는 무엇인가요?
+     -class는 (다른상태일때) : ,-element(내부의 일부부만 스타일) :: -->
+
+    <!-- Q3. 그나마 많이 쓰이는게 :before, :after 인데 이 둘의 차이는 무엇인가요?
+     
+    -before는 선택한 요소의 첫번째 자식요소로 삽입, after는 선택한 요소의 마지막 자식요소로 삽입 -->
+
+    <!-- Q4.  input 태그 같은 경우는어떻게? style 안먹음
+    -그래서 Pseudo-element이용해야함 -->
+    <p class="pseudo">Pseudo-element</p>
+    <p class="pseudo">Pseudo-element,after</p>
+    <div class="pseudo-container">Pseudo-element</div>
+    <input type="file" class="input-file" />
+    <h1 class="ribbon">
+      <strong class="ribbon-content">Everybody loves ribbons</strong>
+    </h1>
+    <ol>
+      <li>첫 번째 항목</li>
+      <li>두 번째 항목</li>
+      <li>
+        세 번째 항목 (중첩 리스트)
+        <ol>
+          <li>서브 항목 1</li>
+          <li>서브 항목 2</li>
+        </ol>
+      </li>
+      <li>네 번째 항목</li>
+    </ol>
+  </body>
+</html>
