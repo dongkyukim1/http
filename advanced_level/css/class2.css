@@ -1,0 +1,41 @@
+input[type='file']::-webkit-file-upload-button {
+  background-color: blueviolet;
+}
+input::-webkit-input-placeholder {
+  color: red;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  appearance: none;
+  background-color: antiquewhite;
+  width: 50px;
+  height: 50px;
+}
+/* WebKit 브라우저 (Chrome, Safari, Edge) */
+progress {
+  /* 기본 스타일 제거 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden; /* 둥근 모서리를 유지하기 위해 */
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border-radius: 10px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border-radius: 10px;
+}
