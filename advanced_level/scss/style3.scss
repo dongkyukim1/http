@@ -7,7 +7,7 @@
 
 h2 {
     @include 작명(40px,-1px); // ✅ 40px로 적용 가능
-    color: reset.$메인칼라;
+    color: reset.$main;
 }
 
 h3 {
