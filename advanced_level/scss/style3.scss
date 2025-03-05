@@ -1,0 +1,31 @@
+@use 'reset';
+
+@mixin 작명($size,$space) { // ✅ 매개변수 $size 추가
+    font-size: $size;
+    letter-spacing: $space;
+}
+
+h2 {
+    @include 작명(40px,-1px); // ✅ 40px로 적용 가능
+    color: reset.$메인칼라;
+}
+
+h3 {
+    @include 작명(30px,10px); // ✅ 30px로 적용 가능
+}
+
+h4 {
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+// 글자 중간에 $변수나 $ 파라미터 넣을떈 #{$변수명}
+// ex #{$size}: 10px;
+
+// (2) import 문법
+
+// body{
+//     margin : 0;
+// }
+
+// (3) 다른파일에 $변수를 하려면 파일이름.+믹스인이름()
+// color: reset.$메인칼라;

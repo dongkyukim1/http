@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네스팅,익스텐드</title>
+    <link href="scss/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- (1) .scss vs .sass (괄호없다.)
+         (2) nesting 문법은  두개이상 비추
+         .box {
+             h4 {
+                color: aqua;
+                }
+               }      -->
+         <!-- (3) @extend 문법 -->
+         <!-- %btn {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+            padding: 20px;
+          }
+            .btn-red {
+                @extend %btn;
+                color: red;
+                } -->
+          
+    <div class="box">
+        <h4>하이</h4>
+    </div>
+    <br>
+    <button class="btn-red">빨강</button>
+    <button class="btn-blue">파랑</button>
+    <button class="btn-green">초록</button>
+    <br>
+    <!-- 숙제 -->
+    <div class="box-red">빨강박스</div>
+    <div class="box-blue">파랑박스</div>
+    <div class="box-yello">노랑박스</div>
+
+</body>
+</html>
