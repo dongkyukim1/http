@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+    <style>
+.video-box {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  width : 100%;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  z-index: -1;
+}
+
+.video-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  text-shadow: 0 0 10px #000;
+}
+    </style>
+</head>
+<body>
+    <!-- controls가 비디오 컨트롤러 -->
+    <video src="video/bridge.mp4" controls style="width: 100%;"></video>
+    
+    <!-- source 태그도 가능함 호환성을 챙길수있다는 장점.-->
+    <video controls>
+        <source src="video/bridge.mp4" type="video/mp4">
+    </video>
+
+    <!-- autoplay, loop, muted 속성  크롬은 muted가 항상 있어야함-->
+    <video src="video/bridge.mp4" controls autoplay loop muted></video>
+
+    <!--prelode="none" 미리다운 x auto O ,metadate 는 적당히-->
+    <video preload="auto" src="video/bridge.mp4" controls></video>
+
+    <!--poster 는 썸네일-->
+    <video src="video/bridge.mp4" controls poster="image/apple.png"></video>
+
+    <!--비디오로 배경 넣는 방법 로딩등 유행지남-->
+    <div class="video-box">
+        <video class="video-container" autoplay muted loop>
+          <source src="video/bridge.mp4" type="video/mp4">
+        </video>
+        <h3 class="video-title">Buy Our Shoes!</h3>
+      </div>
+</body>
+</html>
