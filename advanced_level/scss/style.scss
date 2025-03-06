@@ -33,7 +33,6 @@ $basic-border: 15px;
   height: 100px;
   border-radius: 15px;
   padding: 20px;
-  
 }
 
 .btn-red {
@@ -51,21 +50,21 @@ $basic-border: 15px;
   color: blue;
 }
 
-%box{
+%box {
   width: 200px;
   height: 200px;
   padding: 20px;
   color: white;
 }
-.box-red{
+.box-red {
   @extend %box;
   background-color: red;
 }
-.box-blue{
+.box-blue {
   @extend %box;
   background-color: blue;
 }
-.box-yello{
+.box-yello {
   @extend %box;
   background-color: yellow;
 }
