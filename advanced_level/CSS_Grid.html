@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/advanced_level/css/Grid.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- display: grid;는 내맘대로 레이아웃만들기 편함 (IE는 지원안됨 ㅠ) -->
+    <!-- grid-template-columns: 100px 100px 100px; 가로줄 칸 갯수,크기 -->
+    <!-- grid-template-rows: 100px 100px; 세로줄 갯수 크기기-->
+    <!-- fr단위로 폭지정가능  -->
+    <!-- grid-column: 1/5; 세로선 차지 ; 
+    grid-row: 1/;  가로선 차지지-->
+    <div class="grid-container">
+      <div class="grid-nav">1</div>
+      <div class="grid-sidebar">2</div>
+      <div class="grid-content">3</div>
+    </div>
+
+    <!-- 숙제 2) -->
+    <div class="grid-container2">
+      <div class="grid-item grid-big">
+        <img src="https://picsum.photos/500?r=0" />
+      </div>
+      <div class="grid-item grid-small1">
+        <img src="https://picsum.photos/500?r=1" />
+      </div>
+      <div class="grid-item grid-small2">
+        <img src="https://picsum.photos/500?r=2" />
+      </div>
+      <div class="grid-item grid-small3">
+        <img src="https://picsum.photos/500?r=3" />
+      </div>
+      <div class="grid-item grid-small4">
+        <img src="https://picsum.photos/500?r=4" />
+      </div>
+      <div class="grid-item grid-small5">
+        <img src="https://picsum.photos/500?r=5" />
+      </div>
+    </div>
+  </body>
+</html>
