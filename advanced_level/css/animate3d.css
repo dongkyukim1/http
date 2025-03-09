@@ -1,0 +1,53 @@
+/* 전체 컨테이너: 3D 회전 공간 확보 (perspective) */
+.flip-outer {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto; /* 가운데 정렬용 (선택) */
+    perspective: 800px; /* 3D 입체감 정도 */
+  }
+  
+  /* 실제로 회전되는 내부 래퍼 */
+  .flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;       /* 부드러운 회전 효과 */
+    transform-style: preserve-3d;   /* 3D 자식요소 유지 */
+  }
+  
+  /* 앞면(front), 뒷면(back) 공통 스타일 */
+  .front, .back {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;    /* 뒷면 숨기기 */
+    border-radius: 20px;            /* 모서리 둥글게 */
+    overflow: hidden;               /* 둥근 모서리 밖 영역 가림 */
+  }
+  
+  /* 앞면: 애플 로고 이미지를 꽉 채움 */
+  .front {
+    /* 별도 배경 지정이 필요하면 배경 이미지/색 설정 가능 */
+  }
+  .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 비율 맞춰서 잘림 */
+  }
+  
+  /* 뒷면: 180도 회전 상태. 로고 뒤집혔을 때 보이는 영역 */
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f1f1f1, #ccc); /* 옅은 그라디언트 예시 */
+    transform: rotateY(180deg);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* 마우스를 올렸을 때 180도 회전 */
+  .flip-inner:hover {
+    transform: rotateY(180deg);
+  }
+  
